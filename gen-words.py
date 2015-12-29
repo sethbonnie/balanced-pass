@@ -49,11 +49,6 @@ alternating_words = [word for word in words if alternates(word) and len(word) > 
 left_alt_words = [word for word in alternating_words if word[0] in left]
 right_alt_words = [word for word in alternating_words if word[0] in right]
 
-with open('alternating-words.txt', 'w') as f:
-    f.write('\n'.join(alternating_words) + '\n')
-
-with open('left-words.txt', 'w') as f:
-    f.write('\n'.join(left_alt_words) + '\n')
-
-with open('right-words.txt', 'w') as f:
-    f.write('\n'.join(right_alt_words) + '\n')
+print('Words starting on left:', left_alt_words)
+print()
+print('Words starting on right:', right_alt_words)
