@@ -45,5 +45,5 @@ lwords = ['aha', 'ahem', 'ahey', 'aht', 'aid', 'aiel', 'air', 'airish', 'airman'
 
 words = genpass(lwords,rwords,num_passes)
 
-print(words)
+print(', '.join(words))
 print(''.join(words))

@@ -47,5 +47,5 @@ with open('left-words.txt', 'r') as l, open('right-words.txt', 'r') as r:
 
     words = genpass(lwords,rwords,num_passes)
 
-    print(words)
+    print(', '.join(words))
     print(''.join(words))
